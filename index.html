@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!--
+  Provided HTML for A2: Minesweeper
+  CS 11 JS Winter 2021
+
+  Instructions: This code is provided for you, but defines elements that you will
+  be interacting with in minesweeper.js. You are not required to change this HTML, though
+  you may when adding your own features. 
+-->
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="minesweeper.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Minesweeper!</h1>
+    </header>
+    <h2>Game Options:</h2>
+    <fieldset id="menu-options">
+      <label>Width: <input type="number" id="width" value="9" /></label>
+      <label>Height: <input type="number" id="height" value="9" /></label>
+      <label>Mines: <input type="number" id="mines" value="10" /></label>
+      <button id="play">Play</button>
+    </fieldset>
+    <div id="game-container">
+      <div id="grid"></div>
+      <p id="result"></p>
+    </div>
+  </body>
+
+</html>

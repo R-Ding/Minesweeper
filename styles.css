@@ -1,0 +1,79 @@
+/*
+ * Provided CSS for A2: Minesweeper
+ * CS 11 JS Winter 2021
+
+ * Instructions: This code is provided for you, but defines page styling for index.html.
+ * You are not required to change this CSS, though you may when adding your own features. 
+ */
+body {
+  font-family: sans-serif;
+}
+
+h1, #results {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+  font-size: 12pt;
+  width: 60px;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grid {
+  margin: 50px auto;
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+  border: 1px solid black;
+  color: black;
+  background-image: radial-gradient(#fff,#e6e6e6);
+}
+
+.opened {
+  background-image: radial-gradient(rgb(230, 230, 230), rgb(201, 199, 199));
+}
+
+.cell.mine.opened {
+  background-image: url(mine.jpg);
+  background-size: contain;
+}
+
+/* Add a red border to mines for testing. Comment this CSS rule out when you're done! */
+.cell.mine {
+  box-shadow: inset 0px 0px 0px 2px #f00;
+}
+
+.cell.flagged {
+  background-image: url(flag.jpg);
+  background-size: contain;
+  color: red;
+}
